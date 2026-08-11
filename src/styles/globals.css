@@ -1,0 +1,110 @@
+@import "clash-grotesk.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 246 33% 9%;
+    --foreground: 210 40% 98%;
+
+    --card: 247 29% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 247 29% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 100% 75%;
+    --primary-foreground: 247 33% 9%;
+
+    --secondary: 220 100% 72%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 247 18% 20%;
+    --muted-foreground: 214 20% 78%;
+
+    --accent: 280 100% 76%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 247 23% 22%;
+    --input: 247 23% 22%;
+    --ring: 260 100% 78%;
+
+    --radius: 0.5rem;
+  }
+}
+
+/* global elements */
+@layer base {
+  html[data-scroll-orientation="horizontal"] {
+    body {
+      @apply w-fit;
+    }
+    [data-scroll-container] {
+      @apply flex;
+    }
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-background text-foreground cursor-wait;
+  }
+  section {
+    scroll-margin-top: 60px;
+  }
+}
+
+/* custom scrollbar */
+@layer base {
+  ::-webkit-scrollbar {
+    @apply h-2.5 w-2 transition;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    @apply bg-primary;
+  }
+}
+
+/* custom styles */
+@layer base {
+  .clash-grotesk {
+    font-family: "ClashGrotesk-Variable", sans-serif;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent;
+  }
+  .nav-active {
+    color: rgb(226 232 240) !important;
+    @apply text-sm lowercase tracking-tight text-slate-200;
+  }
+  .nav-link {
+    /* Remove the styles from nav-link class */
+    @apply text-sm lowercase tracking-tight text-slate-400;
+  }
+
+  /* blinking animation */
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+}
