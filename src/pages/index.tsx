@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import { useEffect, useRef, Suspense, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +11,6 @@ import {
   MonitorSmartphone,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { cn, scrollTo } from "@/lib/utils";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,11 +25,6 @@ import {
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 import { resumeData } from "@/data/resume";
-
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-  loading: () => <span>Loading scene...</span>,
-});
 
 const serviceIcons = {
   Code2,
@@ -53,7 +47,6 @@ export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
-  const [canRenderSpline, setCanRenderSpline] = useState<boolean>(false);
 
   // handle scroll
   useEffect(() => {
@@ -119,16 +112,6 @@ export default function Home() {
       perspective: 900,
       scale: 0.9,
     });
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const canvas = document.createElement("canvas");
-    const gl =
-      canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-
-    setCanRenderSpline(Boolean(gl));
   }, []);
 
   return (
