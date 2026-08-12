@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -141,9 +142,9 @@ const projectMap = {
       { title: "Outcome", value: "A smarter, calmer decision support dashboard" },
     ],
     screens: [
-      { title: "Overview", note: "Smart summary and key signals at a glance", tone: "bg-gradient-to-br from-orange-200 via-amber-100 to-rose-200" },
-      { title: "Insights panel", note: "AI recommendations with confidence and context", tone: "bg-gradient-to-br from-fuchsia-200 via-pink-100 to-violet-200" },
-      { title: "Operations view", note: "Actionable reports designed for real workflow decisions", tone: "bg-gradient-to-br from-violet-200 via-indigo-100 to-sky-200" },
+      { title: "Overview", note: "Smart summary and key signals at a glance", tone: "bg-gradient-to-br from-orange-200 via-amber-100 to-rose-200", image: undefined },
+      { title: "Insights panel", note: "AI recommendations with confidence and context", tone: "bg-gradient-to-br from-fuchsia-200 via-pink-100 to-violet-200", image: undefined },
+      { title: "Operations view", note: "Actionable reports designed for real workflow decisions", tone: "bg-gradient-to-br from-violet-200 via-indigo-100 to-sky-200", image: undefined },
     ],
   },
 } as const;
@@ -170,7 +171,7 @@ export default function WorkDetailPage() {
 
   const renderMockup = () => {
     if (project.variant === "mobile") {
-      const firstImage = (project as any).screens?.[0]?.image;
+      const firstImage = project.screens?.[0]?.image;
       return (
         <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-[#f7f3fb] p-4 shadow-[0_22px_60px_rgba(15,23,42,0.2)]">
           <div className="mb-4 flex items-center justify-between px-2 text-[9px] uppercase tracking-[0.2em] text-slate-500">
@@ -205,7 +206,7 @@ export default function WorkDetailPage() {
     }
 
     if (project.variant === "commerce") {
-      const firstImage = (project as any).screens?.[0]?.image;
+      const firstImage = project.screens?.[0]?.image;
       return (
         <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-[#f5f3ef] p-5 shadow-[0_22px_60px_rgba(15,23,42,0.2)]">
           <div className="mb-4 flex items-center justify-between text-[9px] uppercase tracking-[0.2em] text-slate-500">
@@ -258,20 +259,6 @@ export default function WorkDetailPage() {
             <div className="h-2.5 w-[75%] rounded-full bg-white/30" />
           </div>
         </div>
-      </div>
-    );
-  };
-
-  const renderFigmaEmbed = (url: string) => {
-    return (
-      <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 shadow-[0_22px_60px_rgba(15,23,42,0.25)] h-[600px] w-full">
-        <iframe
-          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-          width="100%"
-          height="100%"
-          src={url}
-          allowFullScreen
-        />
       </div>
     );
   };
@@ -412,9 +399,9 @@ export default function WorkDetailPage() {
             {project.screens.map((screen) => (
               <div key={screen.title} className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.02] p-2 transition-all duration-500 hover:bg-white/[0.04]">
                 <div className={`absolute inset-0 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-20 ${screen.tone}`} />
-                {(screen as any).image ? (
+                {screen.image ? (
                   <div className="relative rounded-[26px] overflow-hidden border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-                    <img src={(screen as any).image} alt={screen.title} className="w-full h-auto object-cover" />
+                    <img src={screen.image} alt={screen.title} className="w-full h-auto object-cover" />
                   </div>
                 ) : (
                   <div className={`relative rounded-[26px] border border-black/5 p-4 ${screen.tone}`}>
