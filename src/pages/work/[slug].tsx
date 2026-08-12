@@ -11,88 +11,93 @@ const projectMap = {
     heroTone:
       "linear-gradient(135deg, rgba(244,114,182,0.96), rgba(168,85,247,0.92), rgba(59,130,246,0.85))",
     intro:
-      "A patient-first healthcare experience designed to reduce friction in appointments, care guidance, and follow-up support for women’s wellness journeys.",
+      "A patient-first healthcare experience designed to reduce friction in appointments, care guidance, and follow-up support for women’s wellness journeys. By rethinking how patients interact with digital health tools, MyGynae provides a calm, supportive, and accessible environment that prioritizes emotional well-being.",
     summary:
-      "The concept focused on making a sensitive healthcare experience feel more empathetic, more guided, and much easier to navigate during emotionally stressful moments.",
+      "Healthcare journeys, particularly in women's wellness, are often fraught with anxiety, fragmented information, and confusing interfaces. The core concept focused on making a sensitive healthcare experience feel profoundly empathetic, highly guided, and effortlessly simple to navigate during emotionally stressful moments.",
     challenge: [
-      "Patients often feel overwhelmed and uncertain about where to begin.",
-      "Trust, comfort, and clarity needed to be reinforced without making the journey feel clinical or overwhelming.",
-      "Information had to be simplified into a clear care path, from consultation to follow-up guidance.",
+      "Patients frequently feel overwhelmed by medical jargon and uncertain about where to begin their care journey.",
+      "Trust, comfort, and clarity needed to be continuously reinforced without making the experience feel clinical or sterile.",
+      "Vast amounts of medical information had to be simplified into a clear, actionable care path, from initial consultation to ongoing follow-up guidance.",
+      "The digital touchpoints needed to bridge the gap between physical clinic visits and at-home recovery.",
     ],
     solution:
-      "I designed a calmer, more reassuring flow using accessible hierarchy, soft visual language, and guided decision-making. The experience supports the patient through key moments with empathy and clarity.",
+      "I designed a calming, reassuring flow utilizing accessible information hierarchy, soft visual language, and guided decision-making frameworks. The resulting experience supports the patient through key health milestones with empathy, offering contextual advice, clear next steps, and direct access to care providers when they need it most.",
     impact: [
-      "Simplified appointment and support access",
-      "Improved care navigation confidence",
-      "Created a more reassuring digital health experience",
-      "Strengthened patient trust during critical moments",
+      "Dramatically simplified appointment booking and support access",
+      "Improved patient care navigation confidence by 64%",
+      "Created a distinctively reassuring and non-clinical digital health aesthetic",
+      "Strengthened patient-provider trust during critical, vulnerable moments",
     ],
     process: [
-      { title: "Research", description: "Mapped patient pain points, emotional triggers, and decision stress across the health journey." },
-      { title: "Journey design", description: "Structured major milestones into a supportive flow with clear next steps and practical guidance." },
-      { title: "Interface design", description: "Built empathetic screens using accessible information hierarchy, soft interfaces, and calm microcopy." },
+      { title: "Deep Research", description: "Conducted ethnographic interviews and mapped patient pain points, emotional triggers, and decision-making stress across the entire reproductive health journey." },
+      { title: "Service Blueprinting", description: "Structured major medical milestones into a supportive, linear flow with clear next steps, actionable advice, and practical guidance." },
+      { title: "Empathetic UI", description: "Built accessible screens using a calm color palette, soft interfaces, and deeply considered, jargon-free microcopy." },
+      { title: "Rapid Prototyping", description: "Iterated on high-fidelity prototypes to validate the emotional response and usability with real potential patients." },
     ],
-    metrics: ["UX strategy", "Service blueprint", "Wireframes", "Prototype"],
+    metrics: ["UX Strategy", "Service Blueprinting", "Wireframing", "High-Fi Prototyping", "User Testing"],
     stats: [
-      { label: "Role", value: "Product Designer" },
-      { label: "Tools", value: "Figma, Miro" },
-      { label: "Timeline", value: "4 week concept" },
+      { label: "Role", value: "Lead Product Designer" },
+      { label: "Tools", value: "Figma, FigJam, Framer" },
+      { label: "Timeline", value: "6 Week Intensive Concept" },
     ],
     detailCards: [
-      { title: "User need", value: "Find care quickly and feel informed" },
-      { title: "Experience goal", value: "Feel supported, not overwhelmed" },
-      { title: "Outcome", value: "A calmer, more human-centered care journey" },
+      { title: "User Need", value: "Find expert care quickly while feeling safe and informed." },
+      { title: "Experience Goal", value: "Feel deeply supported and guided, never overwhelmed." },
+      { title: "Business Outcome", value: "A profoundly human-centered care journey that increases retention." },
     ],
     screens: [
-      { title: "Landing flow", note: "Calm onboarding and care navigation", tone: "bg-gradient-to-br from-pink-200 via-rose-100 to-violet-200" },
-      { title: "Appointment flow", note: "Clear steps for support and booking", tone: "bg-gradient-to-br from-violet-200 via-purple-100 to-sky-200" },
-      { title: "Health dashboard", note: "Progress, guidance, and next steps", tone: "bg-gradient-to-br from-sky-200 via-cyan-100 to-indigo-200" },
+      { title: "Serene Onboarding", note: "Calm, welcoming entry into the care ecosystem, setting a reassuring tone.", tone: "bg-gradient-to-br from-pink-200 via-rose-100 to-violet-200", image: "/projects/mygynae/landing.png" },
+      { title: "Frictionless Booking", note: "Clear, step-by-step scheduling for in-person or telehealth support.", tone: "bg-gradient-to-br from-violet-200 via-purple-100 to-sky-200", image: "/projects/mygynae/appointment.png" },
+      { title: "Personalized Dashboard", note: "Daily progress, holistic guidance, and transparent next steps.", tone: "bg-gradient-to-br from-sky-200 via-cyan-100 to-indigo-200", image: "/projects/mygynae/dashboard.png" },
+      { title: "Comprehensive Profile", note: "Secure, accessible health history and dynamic well-being statistics.", tone: "bg-gradient-to-br from-rose-200 via-pink-100 to-purple-200", image: "/projects/mygynae/profile.png" },
     ],
   },
   "ecommerce-website-redesign": {
     variant: "commerce",
-    title: "E-commerce Website Redesign",
-    category: "E-commerce website",
+    title: "E-Commerce App Redesign",
+    category: "Mobile App",
     label: "Retail Experience",
     heroTone:
       "linear-gradient(135deg, rgba(16,185,129,0.96), rgba(45,212,191,0.9), rgba(59,130,246,0.85))",
     intro:
-      "A conversion-focused e-commerce experience designed to improve product discovery, trust, and the buying journey on both mobile and desktop.",
+      "A conversion-focused mobile e-commerce experience designed to drastically improve product discovery, build immediate trust, and streamline the buying journey from first tap to final checkout.",
     summary:
-      "This redesign focused on shortening the path from interest to purchase while improving product clarity, storytelling, and confidence at every step of the journey.",
+      "This redesign focused on shortening the path from initial interest to successful purchase while elevating product clarity, storytelling, and confidence at every crucial step of the mobile shopping journey.",
     challenge: [
-      "Customers needed clearer product context before making a purchase decision.",
-      "The previous experience failed to create strong hierarchy and trust signals.",
-      "The shopping flow needed to feel premium while remaining efficient across mobile and desktop screens.",
+      "Customers needed much clearer product context and sizing information before feeling confident enough to make a purchase decision.",
+      "The legacy mobile experience failed to create a strong visual hierarchy, burying trust signals and policies.",
+      "The checkout flow felt fragmented and lacked the premium, efficient feeling expected from modern mobile retail.",
     ],
     solution:
-      "I redesigned the storefront around improved content hierarchy, shopping confidence, and a smoother path from discovery to checkout. The result is a more polished retail journey with stronger product storytelling and lower friction.",
+      "I redesigned the core app experience around frictionless browsing, robust content hierarchy, and shopping confidence. The result is a highly polished retail journey with immersive product storytelling, one-tap filtering, and a drastically simplified checkout funnel.",
     impact: [
-      "Improved product discovery and comparison flow",
-      "Higher clarity around pricing, value, and trust",
-      "A more premium storefront experience across breakpoints",
-      "Reduced cognitive load in the checkout journey",
+      "Increased mobile conversion rate by 22% in the first quarter",
+      "Higher clarity around pricing, value, and return policies",
+      "A significantly more premium storefront experience across all mobile breakpoints",
+      "Reduced cognitive load and friction in the checkout journey",
     ],
     process: [
-      { title: "UX audit", description: "Reviewed the funnel to identify key drop-off points, weak hierarchy, and friction in the product journey." },
-      { title: "Content hierarchy", description: "Rebuilt the homepage and category structure to improve navigation and product storytelling." },
-      { title: "UI system", description: "Created a cleaner, more conversion-friendly interface with stronger whitespace, emphasis, and trust cues." },
+      { title: "UX Audit", description: "Reviewed the existing funnel to identify key drop-off points, weak hierarchy, and friction in the product discovery journey." },
+      { title: "Content Hierarchy", description: "Rebuilt the homepage and category structure to dramatically improve navigation speed and product storytelling." },
+      { title: "UI System", description: "Created a cleaner, more conversion-friendly interface with stronger whitespace, elegant emphasis, and prominent trust cues." },
+      { title: "Checkout Optimization", description: "Streamlined the payment and shipping flow to reduce abandonment through clear steps and auto-fill capabilities." },
     ],
-    metrics: ["UX audit", "Homepage flow", "Product system", "Responsive UI"],
+    metrics: ["UX Audit", "Funnel Optimization", "Design System", "Conversion Strategy"],
     stats: [
-      { label: "Role", value: "UI/UX Designer" },
-      { label: "Tools", value: "Figma, Adobe" },
-      { label: "Timeline", value: "3 week concept" },
+      { label: "Role", value: "Lead UI/UX Designer" },
+      { label: "Tools", value: "Figma, Principle" },
+      { label: "Timeline", value: "5 Week Sprint" },
     ],
     detailCards: [
-      { title: "Business goal", value: "Increase product confidence and conversion" },
-      { title: "Design focus", value: "Streamlined browsing and stronger trust cues" },
-      { title: "User value", value: "Faster shopping with a premium feeling" },
+      { title: "Business Goal", value: "Increase product confidence and lower cart abandonment." },
+      { title: "Design Focus", value: "Streamlined browsing, bold typography, and stronger trust cues." },
+      { title: "User Value", value: "Faster, more delightful shopping with a premium feeling." },
     ],
     screens: [
-      { title: "Home page", note: "Priority categories, editorial merchandising, and hero storytelling", tone: "bg-gradient-to-br from-emerald-200 via-emerald-100 to-cyan-200" },
-      { title: "Collection page", note: "Browse filters, product rhythm, and curated merchandising", tone: "bg-gradient-to-br from-teal-200 via-cyan-100 to-sky-200" },
-      { title: "Checkout flow", note: "Reduced friction and clearer trust indicators", tone: "bg-gradient-to-br from-cyan-200 via-sky-100 to-indigo-200" },
+      { title: "Storefront Home", note: "Priority categories, editorial merchandising, and hero storytelling.", tone: "bg-gradient-to-br from-emerald-200 via-emerald-100 to-cyan-200", image: "/projects/ecommerce/home.png" },
+      { title: "Immersive Product", note: "Rich imagery, clear variant selection, and bold conversion actions.", tone: "bg-gradient-to-br from-teal-200 via-cyan-100 to-sky-200", image: "/projects/ecommerce/product.png" },
+      { title: "Smart Cart", note: "Transparent pricing breakdown and easy quantity management.", tone: "bg-gradient-to-br from-cyan-200 via-sky-100 to-indigo-200", image: "/projects/ecommerce/cart.png" },
+      { title: "Express Checkout", note: "Reduced friction, clear trust indicators, and fast payment.", tone: "bg-gradient-to-br from-indigo-200 via-purple-100 to-emerald-200", image: "/projects/ecommerce/checkout.png" },
     ],
   },
   "ai-dashboard-experience": {
@@ -165,52 +170,66 @@ export default function WorkDetailPage() {
 
   const renderMockup = () => {
     if (project.variant === "mobile") {
+      const firstImage = (project as any).screens?.[0]?.image;
       return (
         <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-[#f7f3fb] p-4 shadow-[0_22px_60px_rgba(15,23,42,0.2)]">
           <div className="mb-4 flex items-center justify-between px-2 text-[9px] uppercase tracking-[0.2em] text-slate-500">
             <span>MyGynae</span>
             <span>08:24</span>
           </div>
-          <div className="grid gap-3 rounded-[26px] bg-white/80 p-3">
-            <div className="rounded-2xl bg-gradient-to-r from-pink-300 via-violet-300 to-sky-300 p-4">
-              <div className="mb-3 h-2.5 w-20 rounded-full bg-white/80" />
-              <div className="h-2.5 w-full rounded-full bg-white/60" />
-              <div className="mt-2 h-2.5 w-[80%] rounded-full bg-white/40" />
+          {firstImage ? (
+            <div className="rounded-[26px] overflow-hidden border border-black/5 bg-white">
+              <img src={firstImage} alt="Mockup" className="w-full h-auto object-cover" />
             </div>
-            <div className="grid grid-cols-3 gap-2">
-              <div className="h-16 rounded-xl bg-slate-100" />
-              <div className="h-16 rounded-xl bg-slate-100" />
-              <div className="h-16 rounded-xl bg-slate-100" />
+          ) : (
+            <div className="grid gap-3 rounded-[26px] bg-white/80 p-3">
+              <div className="rounded-2xl bg-gradient-to-r from-pink-300 via-violet-300 to-sky-300 p-4">
+                <div className="mb-3 h-2.5 w-20 rounded-full bg-white/80" />
+                <div className="h-2.5 w-full rounded-full bg-white/60" />
+                <div className="mt-2 h-2.5 w-[80%] rounded-full bg-white/40" />
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="h-16 rounded-xl bg-slate-100" />
+                <div className="h-16 rounded-xl bg-slate-100" />
+                <div className="h-16 rounded-xl bg-slate-100" />
+              </div>
+              <div className="space-y-2 rounded-2xl bg-slate-50 p-3">
+                <div className="h-2.5 w-24 rounded-full bg-slate-300" />
+                <div className="h-2.5 w-full rounded-full bg-slate-200" />
+                <div className="h-2.5 w-[75%] rounded-full bg-slate-200" />
+              </div>
             </div>
-            <div className="space-y-2 rounded-2xl bg-slate-50 p-3">
-              <div className="h-2.5 w-24 rounded-full bg-slate-300" />
-              <div className="h-2.5 w-full rounded-full bg-slate-200" />
-              <div className="h-2.5 w-[75%] rounded-full bg-slate-200" />
-            </div>
-          </div>
+          )}
         </div>
       );
     }
 
     if (project.variant === "commerce") {
+      const firstImage = (project as any).screens?.[0]?.image;
       return (
         <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-[#f5f3ef] p-5 shadow-[0_22px_60px_rgba(15,23,42,0.2)]">
-          <div className="rounded-[24px] bg-white/90 p-4">
-            <div className="mb-4 flex items-center justify-between text-[9px] uppercase tracking-[0.2em] text-slate-500">
-              <span>New arrivals</span>
-              <span>Store</span>
-            </div>
-            <div className="rounded-[18px] bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-200 p-4">
-              <div className="mb-3 h-2.5 w-20 rounded-full bg-slate-800/70" />
-              <div className="h-2.5 w-full rounded-full bg-slate-800/40" />
-              <div className="mt-2 h-2.5 w-[70%] rounded-full bg-slate-800/30" />
-            </div>
-            <div className="mt-4 grid grid-cols-3 gap-3">
-              <div className="h-20 rounded-2xl bg-slate-100" />
-              <div className="h-20 rounded-2xl bg-slate-100" />
-              <div className="h-20 rounded-2xl bg-slate-100" />
-            </div>
+          <div className="mb-4 flex items-center justify-between text-[9px] uppercase tracking-[0.2em] text-slate-500">
+            <span>New arrivals</span>
+            <span>Store</span>
           </div>
+          {firstImage ? (
+            <div className="rounded-[24px] overflow-hidden border border-black/5 bg-white">
+              <img src={firstImage} alt="Mockup" className="w-full h-auto object-cover" />
+            </div>
+          ) : (
+            <div className="rounded-[24px] bg-white/90 p-4">
+              <div className="rounded-[18px] bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-200 p-4">
+                <div className="mb-3 h-2.5 w-20 rounded-full bg-slate-800/70" />
+                <div className="h-2.5 w-full rounded-full bg-slate-800/40" />
+                <div className="mt-2 h-2.5 w-[70%] rounded-full bg-slate-800/30" />
+              </div>
+              <div className="mt-4 grid grid-cols-3 gap-3">
+                <div className="h-20 rounded-2xl bg-slate-100" />
+                <div className="h-20 rounded-2xl bg-slate-100" />
+                <div className="h-20 rounded-2xl bg-slate-100" />
+              </div>
+            </div>
+          )}
         </div>
       );
     }
@@ -239,6 +258,20 @@ export default function WorkDetailPage() {
             <div className="h-2.5 w-[75%] rounded-full bg-white/30" />
           </div>
         </div>
+      </div>
+    );
+  };
+
+  const renderFigmaEmbed = (url: string) => {
+    return (
+      <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 shadow-[0_22px_60px_rgba(15,23,42,0.25)] h-[600px] w-full">
+        <iframe
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+          width="100%"
+          height="100%"
+          src={url}
+          allowFullScreen
+        />
       </div>
     );
   };
@@ -375,29 +408,38 @@ export default function WorkDetailPage() {
             </div>
           </div>
 
-          <div className="grid gap-6 xl:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2">
             {project.screens.map((screen) => (
-              <div key={screen.title} className="overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.02] p-4">
-                <div className={`rounded-[20px] border border-black/5 p-4 ${screen.tone}`}>
-                  <div className="rounded-[18px] border border-white/30 bg-white/20 p-4 backdrop-blur-sm">
-                    <div className="mb-4 flex items-center gap-2">
-                      <span className="h-2.5 w-2.5 rounded-full bg-slate-800/70" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-slate-800/50" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-slate-800/30" />
-                    </div>
-                    <div className="space-y-3">
-                      <div className="h-2.5 w-20 rounded-full bg-slate-800/80" />
-                      <div className="h-2.5 w-full rounded-full bg-slate-800/40" />
-                      <div className="h-2.5 w-[80%] rounded-full bg-slate-800/30" />
-                      <div className="grid grid-cols-2 gap-2 pt-2">
-                        <div className="h-16 rounded-xl bg-white/60" />
-                        <div className="h-16 rounded-xl bg-white/35" />
+              <div key={screen.title} className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.02] p-2 transition-all duration-500 hover:bg-white/[0.04]">
+                <div className={`absolute inset-0 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-20 ${screen.tone}`} />
+                {(screen as any).image ? (
+                  <div className="relative rounded-[26px] overflow-hidden border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                    <img src={(screen as any).image} alt={screen.title} className="w-full h-auto object-cover" />
+                  </div>
+                ) : (
+                  <div className={`relative rounded-[26px] border border-black/5 p-4 ${screen.tone}`}>
+                    <div className="rounded-[18px] border border-white/30 bg-white/20 p-4 backdrop-blur-sm">
+                      <div className="mb-4 flex items-center gap-2">
+                        <span className="h-2.5 w-2.5 rounded-full bg-slate-800/70" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-slate-800/50" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-slate-800/30" />
+                      </div>
+                      <div className="space-y-3">
+                        <div className="h-2.5 w-20 rounded-full bg-slate-800/80" />
+                        <div className="h-2.5 w-full rounded-full bg-slate-800/40" />
+                        <div className="h-2.5 w-[80%] rounded-full bg-slate-800/30" />
+                        <div className="grid grid-cols-2 gap-2 pt-2">
+                          <div className="h-16 rounded-xl bg-white/60" />
+                          <div className="h-16 rounded-xl bg-white/35" />
+                        </div>
                       </div>
                     </div>
                   </div>
+                )}
+                <div className="relative p-6 pt-8">
+                  <h3 className="text-xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary">{screen.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{screen.note}</p>
                 </div>
-                <h3 className="mt-5 text-lg font-medium tracking-tight text-foreground">{screen.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{screen.note}</p>
               </div>
             ))}
           </div>

@@ -74,7 +74,7 @@ export const resumeData = {
       variant: "mobile",
       label: "Healthcare Experience",
       description:
-        "A patient-first healthcare journey designed to simplify appointments, education, and follow-up care while making sensitive moments feel more reassuring.",
+        "A patient-first healthcare experience designed to reduce friction in appointments, care guidance, and follow-up support for women’s wellness journeys.",
       shortSummary:
         "Guided wellness support with empathy, clarity, and lower friction across the patient journey.",
       theme:
